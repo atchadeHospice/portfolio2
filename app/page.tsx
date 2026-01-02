@@ -26,6 +26,14 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="min-h-screen bg-[#030712] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden">
       
