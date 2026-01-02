@@ -20,11 +20,11 @@ const skills = [
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => setScrolled(window.scrollY > 20);
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#030712] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden">
