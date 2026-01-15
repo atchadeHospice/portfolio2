@@ -99,7 +99,7 @@ const projects = [
     title: "Dashboard SaaS Next.js",
     description: "Une application de service client intelligent.",
     tags: ["Next.js", "Prisma ORM", "Base de Données", "Tailwind" , "N8n"],
-    image: "smartclient.png",
+    image: "smartclient1.png",
     link: "#",
     isExternal: false
   },
